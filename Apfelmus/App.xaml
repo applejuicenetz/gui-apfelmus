@@ -1,0 +1,10 @@
+﻿<Application x:Class="Apfelmus.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Application.Resources>
+        <LinearGradientBrush x:Key="appBackground" StartPoint="0,0.5" EndPoint="1,2">
+            <GradientStop Color="GreenYellow" Offset="0" />
+            <GradientStop Color="Orange" Offset="1" />
+        </LinearGradientBrush>
+    </Application.Resources>
+</Application>

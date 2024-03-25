@@ -1,5 +1,5 @@
 # appleJuice GUI Apfelmus
 
-Author `DCA-daredevil` / `ZSOFT`
+Author `daredevil`
 
 geschrieben in .NET 4.0

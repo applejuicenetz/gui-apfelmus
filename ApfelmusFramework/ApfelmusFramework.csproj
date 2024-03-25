@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DA17CBED-2033-40EA-8982-F8A092FAC033}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ApfelmusFramework</RootNamespace>
+    <AssemblyName>ApfelmusFramework</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dlls\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Allgemein\AppleJuice.cs" />
+    <Compile Include="Classes\Allgemein\FileInformation.cs" />
+    <Compile Include="Classes\Allgemein\FileSystem.cs" />
+    <Compile Include="Classes\Allgemein\Part.cs" />
+    <Compile Include="Classes\Allgemein\PowerDownloadValues.cs" />
+    <Compile Include="Classes\Allgemein\ServerListServer.cs" />
+    <Compile Include="Classes\Config\Config.cs" />
+    <Compile Include="Classes\Converter\CreditsColor.cs" />
+    <Compile Include="Classes\Converter\DeleteHtmlSpecialChars.cs" />
+    <Compile Include="Classes\Converter\DownloadsColor.cs" />
+    <Compile Include="Classes\Converter\FilenameToImage.cs" />
+    <Compile Include="Classes\Converter\FileSizeConverter1.cs" />
+    <Compile Include="Classes\Converter\FileSizeConverter2.cs" />
+    <Compile Include="Classes\Converter\FileSizeConverter3.cs" />
+    <Compile Include="Classes\Converter\FileSizeConverter4.cs" />
+    <Compile Include="Classes\Converter\FirewallConverter.cs" />
+    <Compile Include="Classes\Converter\HostnameConverter.cs" />
+    <Compile Include="Classes\Converter\MaxSpeedPerSlot.cs" />
+    <Compile Include="Classes\Converter\MinSpeedPerSlot.cs" />
+    <Compile Include="Classes\Converter\PowerDownload.cs" />
+    <Compile Include="Classes\Converter\RectConverter.cs" />
+    <Compile Include="Classes\Converter\SearchColor.cs" />
+    <Compile Include="Classes\Converter\SecondsToDate.cs" />
+    <Compile Include="Classes\Converter\ServerColor.cs" />
+    <Compile Include="Classes\Converter\SetClip.cs" />
+    <Compile Include="Classes\Converter\SetDownloadStatus.cs" />
+    <Compile Include="Classes\Converter\SetUploadStatus.cs" />
+    <Compile Include="Classes\Converter\Time.cs" />
+    <Compile Include="Classes\Converter\TypeToImage.cs" />
+    <Compile Include="Classes\Converter\UserStatus.cs" />
+    <Compile Include="Classes\Directory\Dir.cs" />
+    <Compile Include="Classes\ExtensionSort\SortableObservableCollection.cs" />
+    <Compile Include="Classes\GetSession\Session.cs" />
+    <Compile Include="Classes\Help\DirectoryChildren.cs" />
+    <Compile Include="Classes\Help\QuickSort.cs" />
+    <Compile Include="Classes\Help\SearchInfo.cs" />
+    <Compile Include="Classes\Information\GeneralInformation.cs" />
+    <Compile Include="Classes\Logic\CreateMd5Hash.cs" />
+    <Compile Include="Classes\Logic\LanguageDictionary.cs" />
+    <Compile Include="Classes\Logic\SingleInstance.cs" />
+    <Compile Include="Classes\Logic\WebConnect.cs" />
+    <Compile Include="Classes\Modified\Download.cs" />
+    <Compile Include="Classes\Modified\DownloadId.cs" />
+    <Compile Include="Classes\Modified\FileName.cs" />
+    <Compile Include="Classes\Modified\Ids.cs" />
+    <Compile Include="Classes\Modified\Information.cs" />
+    <Compile Include="Classes\Modified\NetworkInfo.cs" />
+    <Compile Include="Classes\Modified\Object.cs" />
+    <Compile Include="Classes\Modified\Removed.cs" />
+    <Compile Include="Classes\Modified\Search.cs" />
+    <Compile Include="Classes\Modified\SearchEntry.cs" />
+    <Compile Include="Classes\Modified\Server.cs" />
+    <Compile Include="Classes\Modified\ServerId.cs" />
+    <Compile Include="Classes\Modified\Upload.cs" />
+    <Compile Include="Classes\Modified\UploadId.cs" />
+    <Compile Include="Classes\Modified\User.cs" />
+    <Compile Include="Classes\Modified\UserId.cs" />
+    <Compile Include="Classes\Serializer\BinarySerializer.cs" />
+    <Compile Include="Classes\Settings\Settings.cs" />
+    <Compile Include="Classes\Settings\SettingsDirectory.cs" />
+    <Compile Include="Classes\Settings\SettingsShare.cs" />
+    <Compile Include="Classes\Share\Share.cs" />
+    <Compile Include="Classes\Share\Shares.cs" />
+    <Compile Include="Interfaces\IXmlSerializer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Configfile\Config.dat" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dlls\log4net.dll" />
+    <Resource Include="Images\windows_alt.png" />
+    <Resource Include="Images\user-icon.png" />
+    <Resource Include="Images\uk.png" />
+    <Resource Include="Images\system_preferences.png" />
+    <Resource Include="Images\stock_unknown.png" />
+    <Resource Include="Images\Standard-icon.png" />
+    <Resource Include="Images\sharesubfolders.png" />
+    <Resource Include="Images\sharefolder.png" />
+    <Resource Include="Images\security_firewall_on.png" />
+    <Resource Include="Images\security_firewall_off.png" />
+    <Resource Include="Images\password-icon.png" />
+    <Resource Include="Images\mac.png" />
+    <Resource Include="Images\Linux-icon.png" />
+    <Resource Include="Images\italy.png" />
+    <Resource Include="Images\Home_Server.png" />
+    <Resource Include="Images\home.png" />
+    <Resource Include="Images\harddisk.png" />
+    <Resource Include="Images\Hard_Drive.png" />
+    <Resource Include="Images\gnome_logout.png" />
+    <Resource Include="Images\germany.png" />
+    <Resource Include="Images\Folder_Open.png" />
+    <Resource Include="Images\folder.png" />
+    <Resource Include="Images\floppy.png" />
+    <Resource Include="Images\find.png" />
+    <Resource Include="Images\file_server.png" />
+    <Resource Include="Images\downloads_folder.png" />
+    <Resource Include="Images\documents.png" />
+    <Resource Include="Images\Desktop.png" />
+    <Resource Include="Images\connection.png" />
+    <Resource Include="Images\computer.png" />
+    <Resource Include="Images\arrow_up.png" />
+    <Resource Include="Images\arrow_down.png" />
+    <Resource Include="Images\apple.png" />
+    <Resource Include="Images\Apple-icon.png" />
+    <Resource Include="Images\Apple-icon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
